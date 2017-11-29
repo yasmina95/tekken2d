@@ -14,6 +14,7 @@ public class VentanaJuego extends JFrame {
 		 * 
 		 */
 	private static final long serialVersionUID = 1L;
+	
 	public VentanaJuego() throws InterruptedException{
 	getContentPane().setLayout(null);
     //Panel con fondo de Pantalla utilizado(clase)
@@ -28,12 +29,12 @@ public class VentanaJuego extends JFrame {
 	//Musica de Fondo
 	Musica m1=new Musica("/Musica/101 Player Select.mp3");
 	m1.play();
-	//Botones del panel
+	//BOTON JUGAR
 	JButton btnJugar = new JButton("JUGAR");
 	btnJugar.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent arg0) {
 			dispose();
-			//new Juego();
+			new Vlogin();
 			
 			
 		}
@@ -42,7 +43,7 @@ public class VentanaJuego extends JFrame {
 	btnJugar.setForeground(new Color(50, 205, 50));
 	btnJugar.setBounds(108, 153, 89, 23);
 	panel.add(btnJugar);
-	
+	//BOTON SALIR
 	JButton btnSalir = new JButton("SALIR");
 	btnSalir.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
@@ -55,7 +56,7 @@ public class VentanaJuego extends JFrame {
 	btnSalir.setBounds(220, 153, 89, 23);
 	panel.add(btnSalir);
 	
-	//Titulo del Juego escrito a maquina
+	//Titulo del Juego 
 	//JLabel lblAirhockey = new JLabel("TEKKEN 2D");
 	//lblAirhockey.setHorizontalAlignment(SwingConstants.CENTER);
 	//lblAirhockey.setFont(new Font("Dancing Donuts NF", Font.BOLD, 24));
@@ -66,7 +67,8 @@ public class VentanaJuego extends JFrame {
     setDefaultCloseOperation(EXIT_ON_CLOSE);
     setVisible(true);
 }
-		public static void main(String[] args)throws InterruptedException {    
+	
+public static void main(String[] args)throws InterruptedException {    
 			
 			new VentanaJuego();
 			

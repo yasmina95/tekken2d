@@ -11,7 +11,7 @@ public class Musica {
 	private Clip clip;
 	public Musica(String s){
 		try{
-			AudioInputStream sal= AudioSystem.getAudioInputStream(getClass().getResourceAsStream(s));
+	AudioInputStream sal= AudioSystem.getAudioInputStream(getClass().getResourceAsStream(s));
 		
 	AudioFormat formatoBase= sal.getFormat();
 	AudioFormat formatodecodi= new AudioFormat(
