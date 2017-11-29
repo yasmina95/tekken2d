@@ -16,8 +16,8 @@ public class BD {
 		      Class.forName("com.mysql.jdbc.Driver");
 		      // Setup the connection with the DB
 		      connect = DriverManager
-		          .getConnection("jdbc:mysql://192.168.1.35/mathDice?"
-		              + "user=cook&password=cook01");
+		          .getConnection("jdbc:mysql://localhost/127.0.0.1/tekken?"
+		              + "user=localhost&password=localhost");
 		      //Mensaje de conexion realizada
 		      System.out.println("Conexion realizada");
 	    } catch (Exception e) {
