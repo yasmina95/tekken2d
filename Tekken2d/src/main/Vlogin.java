@@ -6,7 +6,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-
+import bd.Usuario;
 
 public class Vlogin extends JFrame{
 
@@ -22,8 +22,8 @@ public class Vlogin extends JFrame{
     private JLabel labelContra;
     private JTextField txtUsuario;
     private JTextField txtContra;
-    
-    
+    String usuario, contra;
+    Usuario log= new Usuario();
 	public Vlogin(){
 
 	        componentes();
@@ -37,7 +37,15 @@ public class Vlogin extends JFrame{
 	    setTitle("*LOGIN*"); // Le pone un titulo a la ventana
 	    
 	     }
-	    
+	 public void verificacion(){
+    	 
+	        //Aquí guardaremos el contenido de las cajas de texto y se las asignaremos a las variables
+	        usuario = txtUsuario.getText();
+	        contra = txtContra.getText();
+	        
+	        //Invoncamos el método login que requiere 2 paramentros, en este caso los 2 strings que tiene la información del usuario
+	        log.ingresar(usuario, contra);
+	    }
 	    public void componentes(){
 	    	//textos
 	    	    labelUsuario = new JLabel(); // etiqueta
@@ -64,9 +72,9 @@ public class Vlogin extends JFrame{
 	            add(btnLogin);
 	            btnLogin.addActionListener(new ActionListener() {
 	            public void actionPerformed(ActionEvent e) {
-    				//dispose();
-	            	//new Game();
-	            	//Clase que llama al juego
+	            	verificacion(); 
+	            	dispose();
+	            	new MainFrame();
     			}
     });
 	            
@@ -91,7 +99,7 @@ public class Vlogin extends JFrame{
 	    });
 	            
 	        
-	            }
+   }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -5,5 +5,9 @@
 	<classpathentry kind="lib" path="C:/Users/Yasmin/git/tekken2d/Tekken2d/Librerias/jl1.0.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Yasmin/git/tekken2d/Tekken2d/Librerias/mp3spi1.9.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Yasmin/git/tekken2d/Tekken2d/Librerias/tritonus_share.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasmin/git/tekken2d/Tekken2d/Librerias/commons-dbcp-1.4.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Yasmin/git/tekken2d/Tekken2d/Librerias/commons-pool-1.6.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Yasmin/git/tekken2d/Tekken2d/Librerias/mysql-connector-java-5.1.16-bin.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Yasmin/Desktop/UNIVERSIDAD/PROGRAMACION/BD/src/lib/mysql-connector-java-5.1.35-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
