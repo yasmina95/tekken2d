@@ -85,7 +85,7 @@ public class Vlogin extends JFrame{
 	            public void actionPerformed(ActionEvent e) {
 	            	verificacion(); 
 	            	dispose();
-	            	new MainFrame();
+	            	new Juego();
     			}
     });
 	            

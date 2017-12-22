@@ -35,6 +35,7 @@ public class VentanaJuego extends JFrame {
 		public void actionPerformed(ActionEvent arg0) {
 			dispose();
 			new Vlogin();
+			new Juego();
 			
 			
 		}

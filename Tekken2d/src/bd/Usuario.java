@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 import javax.swing.JOptionPane;
 
-import main.MainFrame;
+import main.Juego;
 
 public class Usuario {
 	//Ventana del juego declaracion
@@ -72,7 +72,7 @@ public class Usuario {
 			 	 //Si todo es correcto, este mensaje aparecerá si se trata de un usuario registrado
 			 	 JOptionPane.showMessageDialog(null, "Eres un usuario registrado");
 			 	 //ventana del juego
-			 	 new MainFrame();
+			 	 new Juego();
 			 	 
 			 	 }
 			 	 else{
