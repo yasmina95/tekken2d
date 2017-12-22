@@ -46,6 +46,17 @@ public class Vlogin extends JFrame{
 	        //Invoncamos el método login que requiere 2 paramentros, en este caso los 2 strings que tiene la información del usuario
 	        log.ingresar(usuario, contra);
 	    }
+	 public void registrar(){
+    	 
+	        //Aquí guardaremos el contenido de las cajas de texto y se las asignaremos a las variables
+	        usuario = txtUsuario.getText();
+	        contra = txtContra.getText();
+	        int vic=0;
+	        int der=0;
+	        
+	        //Invoncamos el método login que requiere 2 paramentros, en este caso los 2 strings que tiene la información del usuario
+	        log.registro(usuario, contra,vic,der);
+	    }
 	    public void componentes(){
 	    	//textos
 	    	    labelUsuario = new JLabel(); // etiqueta
@@ -84,7 +95,8 @@ public class Vlogin extends JFrame{
 	            add(btnGuardar);
 	            btnGuardar.addActionListener(new ActionListener() {
 		    		public void actionPerformed(ActionEvent e) {
-		    				//futuro metodo guardar usurario de la BD
+		    				//metodo guardar usurario de la BD
+		    			registrar();
 		    			}
 		    });
 	            
